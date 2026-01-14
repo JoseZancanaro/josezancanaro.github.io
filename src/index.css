@@ -4,4 +4,10 @@
 @theme {
   --font-playfair: "Playfair Display", serif;
   --font-lora: "Lora", sans-serif;
+
+  --color-teste1: #F2EDE4;
+  --color-teste2: #402C1A;
+  --color-teste3: #735D49;
+  --color-teste4: #BFAE9F;
+  --color-teste5: #260F01;
 }

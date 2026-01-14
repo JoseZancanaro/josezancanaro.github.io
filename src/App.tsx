@@ -8,13 +8,14 @@ import Projects from "./components/Projects";
 export default function App() {
   return (
     <LanguageProvider>
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/timeline" element={<Timeline />} />
-      </Routes>
+      <div className="min-h-screen bg-teste1 pt-0 pb-16">
+        <Header />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/timeline" element={<Timeline />} />
+        </Routes>
+      </div>
     </LanguageProvider>
   );
 }

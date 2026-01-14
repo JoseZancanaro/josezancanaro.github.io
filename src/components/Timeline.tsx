@@ -1,66 +1,75 @@
 import { useLanguage } from '../contexts/LanguageContext';
 
-const timelineEvents = [
-  { year: 2022, index: 0 },
-  { year: 2022, index: 1 },
-  { year: 2023, index: 2 },
-  { year: 2023, index: 3 },
-  { year: 2024, index: 4 },
-];
+type TimelineItem = {
+  year: number;
+  date: string;
+  title: string;
+  description: string;
+};
 
 export default function Timeline() {
-  const { t } = useLanguage();
-  // Agrupar eventos por ano
-  const eventsByYear = timelineEvents.reduce((acc, event) => {
-    if (!acc[event.year]) {
-      acc[event.year] = [];
-    }
-    acc[event.year].push(event);
-    return acc;
-  }, {} as Record<number, typeof timelineEvents>);
+  const { t, tArray } = useLanguage();
 
-  // Ordenar anos em ordem decrescente
-  const years = Object.keys(eventsByYear)
+  const items = tArray('timeline.items') as TimelineItem[] || [];
+
+  // Agrupar itens por ano
+  const itemsByYear = items.reduce<Record<number, TimelineItem[]>>(
+    (acc, item) => {
+      if (!acc[item.year]) {
+        acc[item.year] = [];
+      }
+      acc[item.year].push(item);
+      return acc;
+    },
+    {}
+  );
+
+  // Ordenar anos (decrescente)
+  const years = Object.keys(itemsByYear)
     .map(Number)
     .sort((a, b) => b - a);
 
   return (
-    <section className="mt-16">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="space-y-8">
-          {years.map((year) => (
-            <div key={year} className="relative">
-              {/* Bloco do ano */}
-              <div className="relative border-l-2 border-zinc-300 pl-6">
+    <section className="mt-12">
+      <div className="flex justify-center">
+        <div className="flex flex-col items-center gap-6 max-w-3xl w-full">
+          {/* Conteúdo */}
+          <div className="w-full">
+            {years.map((year, yearIndex) => (
+              <div key={year} className="w-full">
                 {/* Ano */}
-                <div className="pt-1 mb-4">
-                  <h2 className="text-2xl font-playfair font-bold text-zinc-800">
-                    {year}
-                  </h2>
-                </div>
+                <h3 className="text-3xl font-playfair font-semibold text-teste2 mb-4">
+                  {year}
+                </h3>
 
                 {/* Eventos do ano */}
-                <div className="space-y-4 pl-0">
-                  {eventsByYear[year].map((event, index) => (
-                    <div key={index} className="pb-4 last:pb-0">
-                      <p className="text-xs font-lora font-medium text-zinc-500 mb-1">
-                        {t(`timeline.items.${event.index}.date`)}
+                <div className="flex flex-col gap-6">
+                  {itemsByYear[year].map((item, index) => (
+                    <div key={index} className="flex flex-col gap-2">
+                      <p className="text-sm font-lora font-medium text-teste3">
+                        {item.date}
                       </p>
-                      <h3 className="text-lg font-playfair font-semibold mb-2 text-zinc-800">
-                        {t(`timeline.items.${event.index}.title`)}
-                      </h3>
-                      <p className="text-sm font-lora text-zinc-600 leading-relaxed">
-                        {t(`timeline.items.${event.index}.description`)}
+
+                      <h4 className="text-lg font-playfair font-semibold text-teste2">
+                        {item.title}
+                      </h4>
+
+                      <p className="text-base font-lora text-teste3 leading-relaxed">
+                        {item.description}
                       </p>
                     </div>
                   ))}
                 </div>
+
+                {/* Separador entre anos */}
+                {yearIndex < years.length - 1 && (
+                  <div className="border-t border-teste4 mt-6 pt-6"></div>
+                )}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-  

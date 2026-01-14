@@ -4,15 +4,41 @@ export default function LanguageSelector() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="absolute top-4 right-4">
-      <select
-        value={language}
-        onChange={(e) => setLanguage(e.target.value as 'pt-BR' | 'en-US')}
-        className="px-3 py-1.5 text-sm font-lora font-medium rounded border border-zinc-300 bg-white text-zinc-800 hover:border-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-300 focus:border-zinc-400 cursor-pointer appearance-none bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Cpath%20fill%3D%22%23374151%22%20d%3D%22M6%209L1%204h10z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px] bg-[right_8px_center] bg-no-repeat pr-8 shadow-sm"
-      >
-        <option value="pt-BR">PT</option>
-        <option value="en-US">EN</option>
-      </select>
+    <div className="absolute -top-0.5 right-6 mt-6">
+      <style>{`
+        #language-select option {
+          background-color: #F2EDE4 !important;
+          color: #402C1A !important;
+        }
+        #language-select option:hover {
+          background-color: #BFAE9F !important;
+        }
+      `}</style>
+      <div className="relative w-full min-w-[60px]">
+        <select
+          id="language-select"
+          value={language}
+          onChange={(e) => setLanguage(e.target.value as 'pt-BR' | 'en-US')}
+          className="w-full bg-teste1 placeholder:text-teste3 text-teste2 text-sm font-lora font-medium border border-teste4 rounded pl-3 pr-8 py-1.5 transition duration-300 ease focus:outline-none focus:border-teste3 hover:border-teste3 shadow-sm focus:shadow-md appearance-none cursor-pointer"
+        >
+          <option value="pt-BR">BR</option>
+          <option value="en-US">US</option>
+        </select>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.2"
+          stroke="currentColor"
+          className="h-5 w-5 ml-1 absolute top-2.5 right-2.5 text-teste2 pointer-events-none"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+          />
+        </svg>
+      </div>
     </div>
   );
 }

@@ -4,24 +4,38 @@ const About = () => {
   const { t } = useLanguage();
   
   return (
-    <div className="flex justify-center mt-16">
+    <div className="flex justify-center mt-12">
       <div className="flex flex-col items-end gap-6">
         <div className="flex flex-row items-center justify-between gap-16 max-w-3xl">
           <img
-            src="src/assets/foto.png"
+            src="src/assets/profile-photo.png"
             alt="José Carlos Zancanaro"
-            className="w-40 h-40 rounded-full object-cover grayscale"
-          /> 
-          <p className="text-base font-lora text-zinc-700">
-            {t('about.description')}
-          </p>
+            className="w-40 h-40 rounded-full object-cover sepia-65"
+          />
+          <div className="text-base font-lora text-teste3">
+            {t('about.description').split('\n\n').map((paragraph, index) => {
+              // Processa negrito (**texto**)
+              const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+              return (
+                <p key={index} className="mb-4 last:mb-0">
+                  {parts.map((part, partIndex) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      const boldText = part.slice(2, -2);
+                      return <strong key={partIndex} className="font-semibold">{boldText}</strong>;
+                    }
+                    return <span key={partIndex}>{part}</span>;
+                  })}
+                </p>
+              );
+            })}
+          </div>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-4">
             <a
               href="https://www.linkedin.com/in/jose-zancanaro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-500 hover:text-zinc-800"
+              className="text-teste3 hover:text-teste2"
               aria-label="LinkedIn"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -33,7 +47,7 @@ const About = () => {
               href="https://github.com/JoseZancanaro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-500 hover:text-zinc-800"
+              className="text-teste3 hover:text-teste2"
               aria-label="GitHub"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
