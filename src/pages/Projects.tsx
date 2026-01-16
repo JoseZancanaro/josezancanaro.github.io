@@ -18,11 +18,11 @@ export default function Projects() {
             return (
               <div key={index} className="w-full">
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-2xl font-playfair font-semibold text-teste2">
+                  <h2 className="text-2xl font-playfair font-semibold text-primary">
                     {t(`projects.items.${index}.title`)}
                   </h2>
                   
-                  <p className="text-base font-lora text-teste3">
+                  <p className="text-base font-lora text-secondary">
                     {t(`projects.items.${index}.description`)}
                   </p>
                   
@@ -31,7 +31,7 @@ export default function Projects() {
                       {tags.map((tag: string, tagIndex: number) => (
                         <span
                           key={tagIndex}
-                          className="px-3 py-1 text-sm font-lora font-medium bg-teste4 text-teste2 rounded-full"
+                          className="px-3 py-1 text-sm font-lora font-medium bg-muted text-primary rounded-full"
                         >
                           {tag}
                         </span>
@@ -43,7 +43,7 @@ export default function Projects() {
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-teste3 hover:text-teste2 transition-colors inline-flex items-center gap-2 w-fit"
+                    className="text-secondary hover:text-primary transition-colors inline-flex items-center gap-2 w-fit"
                   >
                     <span className="font-lora text-sm font-medium">{t('projects.view')}</span>
                     <svg
@@ -64,7 +64,7 @@ export default function Projects() {
                 </div>
                 
                 {index < projectsCount - 1 && (
-                  <div className="border-t border-teste4 mt-6 pt-6"></div>
+                  <div className="border-t border-muted mt-6 pt-6"></div>
                 )}
               </div>
             );

@@ -12,7 +12,7 @@ const About = () => {
             alt="José Carlos Zancanaro"
             className="w-40 h-40 rounded-full object-cover sepia-65"
           />
-          <div className="text-base font-lora text-teste3">
+          <div className="text-base font-lora text-secondary">
             {t('about.description').split('\n\n').map((paragraph, index) => {
               // Processa negrito (**texto**)
               const parts = paragraph.split(/(\*\*.*?\*\*)/g);
@@ -35,7 +35,7 @@ const About = () => {
               href="https://www.linkedin.com/in/jose-zancanaro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teste3 hover:text-teste2"
+              className="text-secondary hover:text-primary"
               aria-label="LinkedIn"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -47,7 +47,7 @@ const About = () => {
               href="https://github.com/JoseZancanaro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teste3 hover:text-teste2"
+              className="text-secondary hover:text-primary"
               aria-label="GitHub"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">

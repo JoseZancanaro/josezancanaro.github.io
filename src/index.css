@@ -5,9 +5,9 @@
   --font-playfair: "Playfair Display", serif;
   --font-lora: "Lora", sans-serif;
 
-  --color-teste1: #F2EDE4;
-  --color-teste2: #402C1A;
-  --color-teste3: #735D49;
-  --color-teste4: #BFAE9F;
-  --color-teste5: #260F01;
+  --color-background: #F2EDE4;
+  --color-primary: #402C1A;
+  --color-secondary: #735D49;
+  --color-muted: #BFAE9F;
+  --color-accent: #260F01;
 }

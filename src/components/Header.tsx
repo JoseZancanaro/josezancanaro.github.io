@@ -4,8 +4,8 @@ import LanguageSelector from "./LanguageSelector";
 
 const hoverBar = ({ isActive }: { isActive: boolean }) =>
   isActive
-    ? "text-teste2 border-b border-teste2"
-    : "text-teste3 hover:text-teste2";
+    ? "text-primary border-b border-primary"
+    : "text-secondary hover:text-primary";
 
 const Header = () => {
   const { t } = useLanguage();
@@ -24,7 +24,7 @@ const Header = () => {
           {t('nav.timeline')}
         </NavLink>
       </nav>
-      <h1 className="text-5xl font-playfair font-bold text-teste2">
+      <h1 className="text-5xl font-playfair font-bold text-primary">
         José Carlos <br/>&nbsp;&nbsp;&nbsp;&nbsp;Zancanaro
       </h1>
     </header>

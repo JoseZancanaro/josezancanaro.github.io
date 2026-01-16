@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+🇺🇸 English | [🇧🇷 Português](./README.pt-br.md)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Website / Portfolio
 
-Currently, two official plugins are available:
+This repository contains the source code of my personal website and portfolio, developed to present my academic and professional background, personal projects, interests, and contact information in a clear, organized, and visually consistent way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Available at:**  
+https://josezancanaro.com  
+Hosted and served via Netlify.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Project banner](./src/assets/banner.en-us.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- NPM for dependency management.
+- Vite as the development environment and build tool.
+- TypeScript with ReactJS.
+- Tailwind CSS for UI and styling.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Typography and Colors
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Fonts**
+- Playfair Display — headings and highlights.
+- Lora — body text and descriptions.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Colors**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Main background: `#F2EDE4` <span style="display:inline-block;width:14px;height:14px;background:#F2EDE4;border:1px solid #ccc;vertical-align:middle;"></span>
+- Headings: `#402C1A` <span style="display:inline-block;width:14px;height:14px;background:#402C1A;vertical-align:middle;"></span>
+- Texts: `#735D49` <span style="display:inline-block;width:14px;height:14px;background:#735D49;vertical-align:middle;"></span>
+- Borders and dividers: `#BFAE9F` <span style="display:inline-block;width:14px;height:14px;background:#BFAE9F;vertical-align:middle;"></span>
+- Accents and hover states: `#260F01` <span style="display:inline-block;width:14px;height:14px;background:#260F01;vertical-align:middle;"></span>
+
+---
+
+## Contents
+
+- About: personal introduction and interests, including contact links.  
+- Projects: academic, personal, and experimental projects.  
+- Timeline: academic and professional journey organized by year.  
+
+---

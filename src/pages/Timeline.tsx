@@ -38,7 +38,7 @@ export default function Timeline() {
             {years.map((year, yearIndex) => (
               <div key={year} className="w-full">
                 {/* Ano */}
-                <h3 className="text-3xl font-playfair font-semibold text-teste2 mb-4">
+                <h3 className="text-3xl font-playfair font-semibold text-primary mb-4">
                   {year}
                 </h3>
 
@@ -46,15 +46,15 @@ export default function Timeline() {
                 <div className="flex flex-col gap-6">
                   {itemsByYear[year].map((item, index) => (
                     <div key={index} className="flex flex-col gap-2">
-                      <p className="text-sm font-lora font-medium text-teste3">
+                      <p className="text-sm font-lora font-medium text-secondary">
                         {item.date}
                       </p>
 
-                      <h4 className="text-lg font-playfair font-semibold text-teste2">
+                      <h4 className="text-lg font-playfair font-semibold text-primary">
                         {item.title}
                       </h4>
 
-                      <p className="text-base font-lora text-teste3 leading-relaxed">
+                      <p className="text-base font-lora text-secondary leading-relaxed">
                         {item.description}
                       </p>
                     </div>
@@ -63,7 +63,7 @@ export default function Timeline() {
 
                 {/* Separador entre anos */}
                 {yearIndex < years.length - 1 && (
-                  <div className="border-t border-teste4 mt-6 pt-6"></div>
+                  <div className="border-t border-muted mt-6 pt-6"></div>
                 )}
               </div>
             ))}

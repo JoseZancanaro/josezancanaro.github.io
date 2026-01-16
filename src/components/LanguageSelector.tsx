@@ -19,7 +19,7 @@ export default function LanguageSelector() {
           id="language-select"
           value={language}
           onChange={(e) => setLanguage(e.target.value as 'pt-BR' | 'en-US')}
-          className="w-full bg-teste1 placeholder:text-teste3 text-teste2 text-sm font-lora font-medium border border-teste4 rounded pl-3 pr-8 py-1.5 transition duration-300 ease focus:outline-none focus:border-teste3 hover:border-teste3 shadow-sm focus:shadow-md appearance-none cursor-pointer"
+          className="w-full bg-background placeholder:text-secondary text-primary text-sm font-lora font-medium border border-muted rounded pl-3 pr-8 py-1.5 transition duration-300 ease focus:outline-none focus:border-secondary hover:border-secondary shadow-sm focus:shadow-md appearance-none cursor-pointer"
         >
           <option value="pt-BR">BR</option>
           <option value="en-US">US</option>
@@ -30,7 +30,7 @@ export default function LanguageSelector() {
           viewBox="0 0 24 24"
           strokeWidth="1.2"
           stroke="currentColor"
-          className="h-5 w-5 ml-1 absolute top-2.5 right-2.5 text-teste2 pointer-events-none"
+          className="h-5 w-5 ml-1 absolute top-2.5 right-2.5 text-primary pointer-events-none"
         >
           <path
             strokeLinecap="round"
