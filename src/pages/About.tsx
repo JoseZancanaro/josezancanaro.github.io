@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col items-end gap-6">
         <div className="flex flex-row items-center justify-between gap-16 max-w-3xl">
           <img
-            src="src/assets/profile-photo.png"
+            src="/assets/profile-photo.png"
             alt="José Carlos Zancanaro"
             className="w-40 h-40 rounded-full object-cover sepia-65"
           />

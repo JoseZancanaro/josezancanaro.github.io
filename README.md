@@ -10,7 +10,7 @@ Hosted and served via Netlify.
 
 ---
 
-![Project banner](./src/assets/banner.en-us.png)
+![Project banner](./public/assets/banner.en-us.png)
 
 ---
 

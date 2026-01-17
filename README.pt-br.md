@@ -11,7 +11,7 @@ Hospedado e servido via Netlify.
 
 ---
 
-![Descrição da imagem](./src/assets/banner.pt-br.png)
+![Descrição da imagem](./public/assets/banner.pt-br.png)
 
 ---
 
