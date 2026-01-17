@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "timeline": "Timeline"
+  },
+  "about": {
+    "title": "About",
+    "description": "José Carlos Zancanaro is a **Computer Scientist** from Santa Catarina – Brazil, with an interest in software development, artificial intelligence, and digital games.\n\nBachelor's degree in Computer Science at UNIVALI, he is passionate about building software in a thoughtful and functional way, and constantly seeking new challenges and learning opportunities. With experience in both independent and collaborative projects, he values well-designed solutions, clean code, and continuous growth.\n\nIf you'd like to talk about projects, ideas, or simply have a conversation, feel free to get in touch via **zancanaro.work@outlook.com** or through the social links below."
+  },
+  "projects": {
+    "title": "Projects",
+    "view": "Learn more",
+    "items": [
+      {
+        "title": "ProtonDB Contributions",
+        "description": "ProtonDB profile featuring reports and written contributions about game performance and compatibility on Linux using Proton. Collaborating with the community by sharing practical experiences and information that help other users improve gameplay on the Steam platform for Linux.",
+        "link": "https://www.protondb.com/users/273691257",
+        "tags": ["Linux", "Proton", "Digital Games"]
+      },
+      {
+        "title": "Dotfiles – Arch Linux (XFCE)",
+        "description": "Collection of personal configuration files for the Arch Linux operating system with XFCE. The project serves as a simple repository to organize and reuse my setup whenever I need to reinstall or adjust a new system.",
+        "link": "https://github.com/JoseZancanaro/Arch-xfce-dotfiles",
+        "tags": ["Linux", "Arch Linux", "XFCE", "Shell"]
+      },
+      {
+        "title": "Neurovisual Controller – Celeste",
+        "description": "Experimental project that investigates the application of a neurovisual controller to the digital game Celeste. The study involved digital image processing techniques such as frame resizing, blurring, and color quantization using K-Means, as well as tracking the main character with the OpenCV CSRT algorithm.\n\nThe project focused on visual frame processing, achieving promising results in the game's initial scenarios.",
+        "link": "https://github.com/JoseZancanaro/Neurovisual-controller-celeste",
+        "tags": ["Python", "Digital Image Processing", "OpenCV", "Digital Games"]
+      },
+      {
+        "title": "Computer Science Studies",
+        "description": "Repository containing notes, exercises, and small experiments developed during the Computer Science at the University of Vale do Itajaí (UNIVALI), covering topics such as algorithms, data structures, operating systems, programming fundamentals, and other computer science-related subjects.",
+        "link": "https://github.com/JoseZancanaro/Computer-science",
+        "tags": ["Academic Studies", "Algorithms", "Data Structures", "Operating Systems"]
+      },
+      {
+        "title": "C++ Game Engine",
+        "description": "Graphics engine developed in C++ as a learning project in Computer Science, using the Simple and Fast Multimedia Library (SFML). The project explores concepts related to graphics rendering, resource management, and low-level programming.",
+        "link": "https://github.com/JoseZancanaro/cpp-engine",
+        "tags": ["C++", "Game Engine", "SFML", "Graphics"]
+      },
+      {
+        "title": "Winter Programming Language",
+        "description": "Experimental programming language developed as a study project, exploring concepts such as language design, syntactic analysis, interpretation, and compiler fundamentals. The project includes the Spring Compiler, a dedicated IDE (Winter IDE – WIDE), and sample code demonstrating the use of the language.",
+        "link": "https://github.com/JoseZancanaro/Winter-programming-language",
+        "tags": ["C++", "Compilers", "Programming Languages"]
+      }      
+    ]
+  },
+  "timeline": {
+    "title": "Timeline",
+    "items": [
+      {
+        "year": 2026,
+        "date": "Currently",
+        "title": "Seeking New Opportunities",
+        "description": "Currently actively seeking professional opportunities in software development, focusing on web and desktop applications. Looking for positions that value continuous learning, development best practices, and constant technical growth."
+      },
+      {
+        "year": 2023,
+        "date": "July 2023",
+        "title": "Master's in Computer Science (UFSC)",
+        "description": "Master's in Computer Science paused after completing coursework. The research project was not developed, but there are plans to resume in the future to complete the program with a focus on Computational Intelligence."
+      },
+      {
+        "year": 2023,
+        "date": "March 2023",
+        "title": "Data Analyst — DATYS",
+        "description": "Conclusion of work as Data Analyst at DATYS. During this period, I worked on normalizing data from the Brazilian Federal Revenue Service and developing processes for collecting and analyzing business metrics. The work focused on optimizing internal processes and improving operational efficiency through solutions based on Google Cloud Platform (GCP) and SQL."
+      },
+      {
+        "year": 2022,
+        "date": "December 2022",
+        "title": "Data Analyst — DATYS",
+        "description": "Started working as Data Analyst at DATYS | Data at Your Service, providing services for Lean Sales."
+      },
+      {
+        "year": 2022,
+        "date": "December 2022",
+        "title": "Software Developer — DATYS / Lean Sales",
+        "description": "Conclusion of work as Software Developer at DATYS. During this period, I participated in the complete development of the events module (RSVP) for the Sphere system, collaborating with the team to transform event management through dynamic and intuitive web pages that covered the entire flow: from the initial Invitation, through Confirmation and Post-event follow-up, to centralized Management and Quality Control. The solution made the environment more interactive and responsive, using modern technologies such as JavaScript/TypeScript, React.js, Tailwind CSS, and Firebase to ensure a smooth and efficient experience."
+      },
+      {
+        "year": 2022,
+        "date": "June 2022",
+        "title": "Software Developer — DATYS / Lean Sales",
+        "description": "Started working as Software Developer at DATYS | Data at Your Service, providing services for Lean Sales."
+      },
+      {
+        "year": 2022,
+        "date": "January 2022",
+        "title": "Master's in Computer Science (UFSC)",
+        "description": "Started Master's in Computer Science with focus on Computational Intelligence at the Federal University of Santa Catarina (UFSC)."
+      },
+      {
+        "year": 2021,
+        "date": "December 2021",
+        "title": "Bachelor's in Computer Science (UNIVALI)",
+        "description": "Completed Bachelor's in Computer Science at the University of Vale do Itajaí (UNIVALI). The undergraduate program covered subjects such as Algorithms and Programming, Data Structures, Computer Architecture, Databases, Software Engineering, Artificial Intelligence, Distributed Systems, Algorithm Complexity, Discrete Simulation, Numerical Calculus, and Statistics."
+      },
+      {
+        "year": 2021,
+        "date": "December 2021",
+        "title": "Research Scholar — LIA / UNIVALI",
+        "description": "Conclusion of work as research scholar at the Applied Intelligence Laboratory (LIA). Developed a neurovisual controller project for the digital game Celeste. The work involved digital image processing (capture, resizing, blurring, and K-Means quantization) and tracking the main character using Background Subtraction algorithms and OpenCV's CSRT tracker, which showed promising results in the initial game scenarios."
+      },
+      {
+        "year": 2021,
+        "date": "January 2021",
+        "title": "Research Scholar — LIA / UNIVALI",
+        "description": "Started working as research scholar (UNIEDU) at the Applied Intelligence Laboratory (LIA)."
+      },
+      {
+        "year": 2018,
+        "date": "December 2018",
+        "title": "Volunteer Activities at LEDS / UNIVALI",
+        "description": "Conclusion of volunteer activities at the Laboratory of Embedded and Distributed Systems (LEDS). Tasks involved installing, studying, and comparing the performance of BookSim and Noxim simulators, as well as deepening theoretical knowledge in simulation metrics. There was also contact with Qt/QML, support for academic studies, and initial interest in functional programming with Haskell."
+      },
+      {
+        "year": 2018,
+        "date": "May 2018",
+        "title": "Volunteer Activities at LEDS / UNIVALI",
+        "description": "Started volunteer work at the Laboratory of Embedded and Distributed Systems (LEDS)."
+      },          
+      {
+        "year": 2017,
+        "date": "January 2017",
+        "title": "Bachelor's in Computer Science (UNIVALI)",
+        "description": "Started undergraduate studies in Computer Science at the University of Vale do Itajaí (UNIVALI)."
+      }
+    ]
+  }
+}

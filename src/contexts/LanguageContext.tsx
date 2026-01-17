@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from 'react';
 import type { ReactNode } from 'react';
-import translationsData from '../locales/translations.json';
+import ptBR from '../locales/pt-BR.json';
+import enUS from '../locales/en-US.json';
 
 type Language = 'pt-BR' | 'en-US';
 
@@ -8,11 +9,16 @@ interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  tArray: (key: string) => any;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-// Função auxiliar para acessar valores aninhados no JSON usando notação de ponto
+const translations = {
+  'pt-BR': ptBR,
+  'en-US': enUS,
+};
+
 const getNestedValue = (obj: any, path: string): string => {
   const keys = path.split('.');
   let value: any = obj;
@@ -24,7 +30,6 @@ const getNestedValue = (obj: any, path: string): string => {
       return path;
     }
     
-    // Se a chave é um número, tenta acessar como array
     if (!isNaN(Number(key)) && Array.isArray(value)) {
       value = value[Number(key)];
     } else if (typeof value === 'object' && key in value) {
@@ -37,16 +42,44 @@ const getNestedValue = (obj: any, path: string): string => {
   return typeof value === 'string' ? value : path;
 };
 
+const getNestedValueAny = (obj: any, path: string): any => {
+  const keys = path.split('.');
+  let value: any = obj;
+  
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    
+    if (value == null) {
+      return null;
+    }
+    
+    if (!isNaN(Number(key)) && Array.isArray(value)) {
+      value = value[Number(key)];
+    } else if (typeof value === 'object' && key in value) {
+      value = value[key];
+    } else {
+      return null;
+    }
+  }
+  
+  return value;
+};
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>('pt-BR');
 
   const t = (key: string): string => {
-    const langData = translationsData[language as keyof typeof translationsData];
+    const langData = translations[language];
     return getNestedValue(langData, key);
   };
 
+  const tArray = (key: string): any => {
+    const langData = translations[language];
+    return getNestedValueAny(langData, key);
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tArray }}>
       {children}
     </LanguageContext.Provider>
   );
