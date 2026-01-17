@@ -19,7 +19,6 @@ const translations = {
   'en-US': enUS,
 };
 
-// Função auxiliar para acessar valores aninhados no JSON usando notação de ponto
 const getNestedValue = (obj: any, path: string): string => {
   const keys = path.split('.');
   let value: any = obj;
@@ -31,7 +30,6 @@ const getNestedValue = (obj: any, path: string): string => {
       return path;
     }
     
-    // Se a chave é um número, tenta acessar como array
     if (!isNaN(Number(key)) && Array.isArray(value)) {
       value = value[Number(key)];
     } else if (typeof value === 'object' && key in value) {
@@ -44,7 +42,6 @@ const getNestedValue = (obj: any, path: string): string => {
   return typeof value === 'string' ? value : path;
 };
 
-// Função auxiliar para retornar valores completos (incluindo arrays)
 const getNestedValueAny = (obj: any, path: string): any => {
   const keys = path.split('.');
   let value: any = obj;
@@ -56,7 +53,6 @@ const getNestedValueAny = (obj: any, path: string): any => {
       return null;
     }
     
-    // Se a chave é um número, tenta acessar como array
     if (!isNaN(Number(key)) && Array.isArray(value)) {
       value = value[Number(key)];
     } else if (typeof value === 'object' && key in value) {

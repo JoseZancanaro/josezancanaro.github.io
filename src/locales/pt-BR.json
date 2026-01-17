@@ -6,7 +6,7 @@
   },
   "about": {
     "title": "Sobre",
-    "description": "José Carlos Zancanaro é Cientista da Computação, natural de Santa Catarina – Brasil, com interesse em desenvolvimento de software, inteligência artificial e jogos digitais.\n\nBacharel em Ciência da Computação pela UNIVALI, é apaixonado por construir software de forma cuidadosa e funcional, buscando constantemente novos desafios e oportunidades de aprendizado. Com experiência em projetos independentes e colaborativos, valoriza soluções bem pensadas, código claro e evolução contínua.\n\nSe quiser conversar sobre projetos, ideias ou simplesmente trocar uma ideia, é só entrar em contato pelo e-mail **zancanaro.work@outlook.com** ou pelas redes sociais abaixo."
+    "description": "José Carlos Zancanaro é **Cientista da Computação**, natural de Santa Catarina – Brasil, com interesse em desenvolvimento de software, inteligência artificial e jogos digitais.\n\nBacharel em Ciência da Computação pela UNIVALI, é apaixonado por construir software de forma cuidadosa e funcional, buscando constantemente novos desafios e oportunidades de aprendizado. Com experiência em projetos independentes e colaborativos, valoriza soluções bem pensadas, código claro e evolução contínua.\n\nSe quiser conversar sobre projetos, ideias ou simplesmente bater um papo, é só entrar em contato pelo e-mail **zancanaro.work@outlook.com** ou pelas redes sociais abaixo."
   },
   "projects": {
     "title": "Projetos",
@@ -22,29 +22,29 @@
         "title": "Dotfiles – Arch Linux (XFCE)",
         "description": "Coleção de arquivos de configurações pessoais para o sistema operacional Arch Linux com XFCE. O projeto funciona como um repositório simples para organizar e reutilizar minhas configurações sempre que preciso reinstalar ou ajustar um novo sistema.",
         "link": "https://github.com/JoseZancanaro/Arch-xfce-dotfiles",
-        "tags": ["Linux", "XFCE", "Shell"]
+        "tags": ["Linux", "Arch Linux", "XFCE", "Shell"]
       },      
       {
         "title": "Controlador Neurovisual - Celeste",
-        "description": "Projeto experimental que investiga a aplicação de um controlador neurovisual ao jogo digital Celeste. O estudo envolveu técnicas de Processamento Digital de Imagem, como redução, desfoque e quantização de cores com K-Means, além do rastreamento da personagem principal utilizando o algoritmo CSRT do OpenCV.\n\nO foco do projeto esteve no processamento visual dos quadros do jogo, com resultados promissores nos cenários iniciais.",
+        "description": "Projeto experimental que investiga a aplicação de um controlador neurovisual ao jogo digital Celeste. O estudo envolveu técnicas de processamento digital de imagem, como redução, desfoque e quantização de cores com *K-Means*, além do rastreamento da personagem principal utilizando o algoritmo CSRT do OpenCV.\n\nO foco do projeto esteve no processamento visual dos quadros do jogo, com resultados promissores nos cenários iniciais.",
         "link": "https://github.com/JoseZancanaro/Neurovisual-controller-celeste",
         "tags": ["Python", "Processamento Digital de Imagem", "OpenCV", "Jogos Digitais"]
       },
       {
         "title": "Estudos em Ciência da Computação",
-        "description": "Repositório com anotações, exercícios e pequenos experimentos desenvolvidos durante a graduação em Ciência da Computação na Universidade do Vale do Itajaí (UNIVALI), abordando áreas como algoritmos, estruturas de dados, sistemas operacionais, fundamentos de programação e outros temas relacionados à computação.",
+        "description": "Repositório com anotações, exercícios e pequenos experimentos desenvolvidos durante a graduação em Ciência da Computação pela Universidade do Vale do Itajaí (UNIVALI), abordando áreas como algoritmos, estruturas de dados, sistemas operacionais, fundamentos de programação e outros temas relacionados à computação.",
         "link": "https://github.com/JoseZancanaro/Computer-science",
         "tags": ["Estudos Acadêmicos", "Algoritmos", "Estruturas de Dados", "Sistemas Operacionais"]
       },       
       {
         "title": "Motor de Jogos em C++",
-        "description": "Motor gráfico desenvolvido em C++ como projeto de aprendizado em Ciência da Computação, utilizando Simple and Fast Multimedia Library (SFML). O projeto explora conceitos de renderização gráfica, gerenciamento de recursos e programação de baixo nível.",
+        "description": "Motor gráfico desenvolvido em C++ como projeto de aprendizado em Ciência da Computação, utilizando *Simple and Fast Multimedia Library* (SFML). O projeto explora conceitos de renderização gráfica, gerenciamento de recursos e programação de baixo nível.",
         "link": "https://github.com/JoseZancanaro/cpp-engine",
         "tags": ["C++", "Motor de Jogo", "SFML", "Gráficos"]
       },      
       {
         "title": "Linguagem de Programação Winter",
-        "description": "Linguagem de programação experimental desenvolvida como projeto de estudo, explorando conceitos de design de linguagens, análise sintática, interpretação e fundamentos de compiladores. O projeto inclui o Spring Compiler, uma IDE própria (Winter IDE – WIDE) e exemplos de código que demonstram o uso da linguagem.",
+        "description": "Linguagem de programação experimental desenvolvida como projeto de estudo, explorando conceitos de design de linguagens, análise sintática, interpretação e fundamentos de compiladores. O projeto inclui o *Spring Compiler*, uma IDE própria (Winter IDE – WIDE) e exemplos de código que demonstram o uso da linguagem.",
         "link": "https://github.com/JoseZancanaro/Winter-programming-language",
         "tags": ["C++", "Compiladores", "Linguagens de Programação"]
       }
@@ -57,17 +57,20 @@
         "year": 2026,
         "date": "Atualmente",
         "title": "Em busca de novas oportunidades",
-        "description": "Atualmente em busca ativa de oportunidades profissionais na área de desenvolvimento de software, com foco em aplicações web e desktop. Busco posições que valorizem aprendizado contínuo, boas práticas de desenvolvimento e evolução técnica constante."      },
+        "description": "Atualmente em busca ativa de oportunidades profissionais na área de desenvolvimento de software, com foco em aplicações web e desktop. Busco posições que valorizem aprendizado contínuo, boas práticas de desenvolvimento e evolução técnica constante."
+      },
       {
         "year": 2023,
         "date": "Julho de 2023",
         "title": "Mestrado em Ciência da Computação (UFSC)",
-        "description": "Mestrado em Ciência da Computação pausado após a conclusão das disciplinas isoladas. O projeto de pesquisa não foi desenvolvido, mas há planos de retomada futura para conclusão do programa com foco em Inteligência Computacional."      },
+        "description": "Mestrado em Ciência da Computação pausado após a conclusão das disciplinas isoladas. O projeto de pesquisa não foi desenvolvido, mas há planos de retomada futura para conclusão do programa com foco em Inteligência Computacional."
+      },
       {
         "year": 2023,
         "date": "Março de 2023",
         "title": "Analista de Dados — DATYS",
-        "description": "Encerramento da atuação como Analista de Dados na DATYS. Durante o período, atuei na normalização de dados provenientes da Receita Federal do Brasil e no desenvolvimento de processos de coleta e análise de métricas empresariais. O trabalho focou em otimizar processos internos e melhorar a eficiência operacional através de soluções baseadas em Google Cloud Platform (GCP) e SQL."      },
+        "description": "Encerramento da atuação como Analista de Dados na DATYS. Durante o período, atuei na normalização de dados provenientes da Receita Federal do Brasil e no desenvolvimento de processos de coleta e análise de métricas empresariais. O trabalho focou em otimizar processos internos e melhorar a eficiência operacional através de soluções baseadas em *Google Cloud Platform* (GCP) e SQL."
+      },
       {
         "year": 2022,
         "date": "Dezembro de 2022",
@@ -78,7 +81,7 @@
         "year": 2022,
         "date": "Dezembro de 2022",
         "title": "Desenvolvedor de Software — DATYS / Lean Sales",
-        "description": "Conclusão do trabalho como Desenvolvedor de Software na DATYS. Durante o período, participei do desenvolvimento do módulo de eventos (RSVP) completo para o sistema Sphere, colaborando com a equipe para transformar o gerenciamento de eventos através de páginas web dinâmicas e intuitivas que abrangeram todo o fluxo: desde o Convite inicial, passando pela Confirmação e acompanhamento Pós-evento, até o Gerenciamento centralizado e Controle de Qualidade. A solução tornou o ambiente mais interativo e responsivo, utilizando tecnologias modernas como TypeScript, React.js, Tailwind CSS e Firebase para garantir uma experiência fluida e eficiente."
+        "description": "Conclusão do trabalho como Desenvolvedor de Software na DATYS. Durante o período, participei do desenvolvimento do módulo de eventos (RSVP) completo para o sistema Sphere, colaborando com a equipe para transformar o gerenciamento de eventos através de páginas web dinâmicas e intuitivas que abrangeram todo o fluxo: desde o Convite inicial, passando pela Confirmação e acompanhamento Pós-evento, até o Gerenciamento centralizado e Controle de Qualidade. A solução tornou o ambiente mais interativo e responsivo, utilizando tecnologias modernas como JavaScript/TypeScript, React.js, Tailwind CSS e Firebase para garantir uma experiência fluida e eficiente."
       },
       {
         "year": 2022,
@@ -96,12 +99,13 @@
         "year": 2021,
         "date": "Dezembro de 2021",
         "title": "Bacharelado em Ciência da Computação (UNIVALI)",
-        "description": "Conclusão do Bacharelado em Ciência da Computação pela Universidade do Vale do Itajaí (UNIVALI). A graduação abrangeu disciplinas como Algoritmos e Programação, Estrutura de Dados, Arquitetura de Computadores, Banco de Dados, Engenharia de Software, Inteligência Artificial, Sistemas Distribuídos, Complexidade de Algoritmos, Simulação Discreta, Cálculo Numérico e Estatística."      },
+        "description": "Conclusão do Bacharelado em Ciência da Computação pela Universidade do Vale do Itajaí (UNIVALI). A graduação abrangeu disciplinas como Algoritmos e Programação, Estrutura de Dados, Arquitetura de Computadores, Banco de Dados, Engenharia de Software, Inteligência Artificial, Sistemas Distribuídos, Complexidade de Algoritmos, Simulação Discreta, Cálculo Numérico e Estatística."
+      },
       {
         "year": 2021,
         "date": "Dezembro de 2021",
         "title": "Pesquisador Bolsista — LIA / UNIVALI",
-        "description": "Encerramento da atuação como pesquisador bolsista no Laboratório de Inteligência Aplicada (LIA). Elaborou-se um projeto de controlador neurovisual para o jogo digital Celeste. O trabalho envolveu processamento digital de imagens (captura, redimensionamento, desfocagem e quantização por K-Means) e rastreamento da personagem principal usando algoritmos de Background Subtraction e o tracker CSRT do OpenCV, que apresentou resultados promissores nos cenários iniciais do jogo."
+        "description": "Encerramento da atuação como pesquisador bolsista no Laboratório de Inteligência Aplicada (LIA). Elaborou-se um projeto de controlador neurovisual para o jogo digital Celeste. O trabalho envolveu processamento digital de imagens (captura, redimensionamento, desfocagem e quantização por *K-Means*) e rastreamento da personagem principal usando algoritmos de *Background Subtraction* e o *tracker* CSRT do OpenCV, que apresentou resultados promissores nos cenários iniciais do jogo."
       },
       {
         "year": 2021,

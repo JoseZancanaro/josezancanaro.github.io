@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
-import LanguageSelector from "./LanguageSelector";
+import ToggleLanguage from "./ToggleLanguage";
 
 const hoverBar = ({ isActive }: { isActive: boolean }) =>
   isActive
@@ -12,7 +12,6 @@ const Header = () => {
 
   return (
     <header className="relative flex flex-row items-end justify-center pt-6 gap-80">
-      <LanguageSelector />
       <nav className="text-xl font-playfair font-bold flex gap-4">
         <NavLink to="/" className={hoverBar}>
           {t('nav.about')}
@@ -27,6 +26,7 @@ const Header = () => {
       <h1 className="text-5xl font-playfair font-bold text-primary">
         José Carlos <br/>&nbsp;&nbsp;&nbsp;&nbsp;Zancanaro
       </h1>
+      <ToggleLanguage />
     </header>
   );
 };

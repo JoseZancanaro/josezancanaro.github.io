@@ -1,12 +1,12 @@
 import { useLanguage } from '../contexts/LanguageContext';
+import renderFormattedText from '../utils/renderFormattedText';
 
-export default function Projects() {
+const Projects = () => {
   const { t, tArray } = useLanguage();
-  
-  // Pega os projetos do JSON
+
   const projects = tArray('projects.items') || [];
   const projectsCount = projects.length;
-  
+
   return (
     <section className="mt-12">
       <div className="flex justify-center">
@@ -14,18 +14,18 @@ export default function Projects() {
           {projects.map((project: any, index: number) => {
             const link = t(`projects.items.${index}.link`);
             const tags = project.tags || [];
-            
+
             return (
               <div key={index} className="w-full">
                 <div className="flex flex-col gap-4">
                   <h2 className="text-2xl font-playfair font-semibold text-primary">
                     {t(`projects.items.${index}.title`)}
                   </h2>
-                  
-                  <p className="text-base font-lora text-secondary">
-                    {t(`projects.items.${index}.description`)}
+                  <p className="text-base text-justify font-lora text-secondary">
+                    {renderFormattedText(
+                      t(`projects.items.${index}.description`)
+                    )}
                   </p>
-                  
                   {tags.length > 0 && (
                     <div className="flex flex-wrap gap-2">
                       {tags.map((tag: string, tagIndex: number) => (
@@ -38,14 +38,15 @@ export default function Projects() {
                       ))}
                     </div>
                   )}
-                  
                   <a
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-secondary hover:text-primary transition-colors inline-flex items-center gap-2 w-fit"
                   >
-                    <span className="font-lora text-sm font-medium">{t('projects.view')}</span>
+                    <span className="font-lora text-sm font-medium">
+                      {t('projects.view')}
+                    </span>
                     <svg
                       width="16"
                       height="16"
@@ -62,7 +63,6 @@ export default function Projects() {
                     </svg>
                   </a>
                 </div>
-                
                 {index < projectsCount - 1 && (
                   <div className="border-t border-muted mt-6 pt-6"></div>
                 )}
@@ -74,4 +74,5 @@ export default function Projects() {
     </section>
   );
 }
-  
+
+export default Projects;

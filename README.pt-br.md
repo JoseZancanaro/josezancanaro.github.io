@@ -32,11 +32,11 @@ Hospedado e servido via Netlify.
 
 **Cores**
 
-- Fundo principal: `#F2EDE4` <span style="display:inline-block;width:14px;height:14px;background:#F2EDE4;border:1px solid #ccc;vertical-align:middle;"></span>
-- Títulos: `#402C1A` <span style="display:inline-block;width:14px;height:14px;background:#402C1A;vertical-align:middle;"></span>
-- Textos: `#735D49` <span style="display:inline-block;width:14px;height:14px;background:#735D49;vertical-align:middle;"></span>
-- Bordas e divisores: `#BFAE9F` <span style="display:inline-block;width:14px;height:14px;background:#BFAE9F;vertical-align:middle;"></span>
-- Destaques e hover: `#260F01` <span style="display:inline-block;width:14px;height:14px;background:#260F01;vertical-align:middle;"></span>
+- Fundo principal: `#F2EDE4`  
+- Títulos: `#402C1A`  
+- Textos: `#735D49`  
+- Bordas e divisores: `#BFAE9F`  
+- Destaques e hover: `#260F01`  
 
 ---
 

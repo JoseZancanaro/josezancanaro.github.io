@@ -31,11 +31,11 @@ Hosted and served via Netlify.
 
 **Colors**
 
-- Main background: `#F2EDE4` <span style="display:inline-block;width:14px;height:14px;background:#F2EDE4;border:1px solid #ccc;vertical-align:middle;"></span>
-- Headings: `#402C1A` <span style="display:inline-block;width:14px;height:14px;background:#402C1A;vertical-align:middle;"></span>
-- Texts: `#735D49` <span style="display:inline-block;width:14px;height:14px;background:#735D49;vertical-align:middle;"></span>
-- Borders and dividers: `#BFAE9F` <span style="display:inline-block;width:14px;height:14px;background:#BFAE9F;vertical-align:middle;"></span>
-- Accents and hover states: `#260F01` <span style="display:inline-block;width:14px;height:14px;background:#260F01;vertical-align:middle;"></span>
+- Main background: `#F2EDE4`  
+- Headings: `#402C1A`  
+- Texts: `#735D49`  
+- Borders and dividers: `#BFAE9F`  
+- Accents and hover states: `#260F01`  
 
 ---
 

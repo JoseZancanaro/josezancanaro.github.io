@@ -6,7 +6,7 @@
   },
   "about": {
     "title": "About",
-    "description": "José Carlos Zancanaro is a Computer Scientist from Santa Catarina – Brazil, with an interest in software development, artificial intelligence, and digital games.\n\nBachelor's degree in Computer Science at UNIVALI, he is passionate about building software in a thoughtful and functional way, and constantly seeking new challenges and learning opportunities. With experience in both independent and collaborative projects, he values well-designed solutions, clean code, and continuous growth.\n\nIf you'd like to talk about projects, ideas, or simply have a conversation, feel free to get in touch via **zancanaro.work@outlook.com** or through the social links below."
+    "description": "José Carlos Zancanaro is a **Computer Scientist** from Santa Catarina – Brazil, with an interest in software development, artificial intelligence, and digital games.\n\nBachelor's degree in Computer Science at UNIVALI, he is passionate about building software in a thoughtful and functional way, and constantly seeking new challenges and learning opportunities. With experience in both independent and collaborative projects, he values well-designed solutions, clean code, and continuous growth.\n\nIf you'd like to talk about projects, ideas, or simply have a conversation, feel free to get in touch via **zancanaro.work@outlook.com** or through the social links below."
   },
   "projects": {
     "title": "Projects",
@@ -22,11 +22,11 @@
         "title": "Dotfiles – Arch Linux (XFCE)",
         "description": "Collection of personal configuration files for the Arch Linux operating system with XFCE. The project serves as a simple repository to organize and reuse my setup whenever I need to reinstall or adjust a new system.",
         "link": "https://github.com/JoseZancanaro/Arch-xfce-dotfiles",
-        "tags": ["Linux", "XFCE", "Shell"]
+        "tags": ["Linux", "Arch Linux", "XFCE", "Shell"]
       },
       {
         "title": "Neurovisual Controller – Celeste",
-        "description": "Experimental project that investigates the application of a neurovisual controller to the digital game Celeste. The study involved Digital Image Processing techniques such as frame resizing, blurring, and color quantization using K-Means, as well as tracking the main character with the OpenCV CSRT algorithm.\n\nThe project focused on visual frame processing, achieving promising results in the game's initial scenarios.",
+        "description": "Experimental project that investigates the application of a neurovisual controller to the digital game Celeste. The study involved digital image processing techniques such as frame resizing, blurring, and color quantization using K-Means, as well as tracking the main character with the OpenCV CSRT algorithm.\n\nThe project focused on visual frame processing, achieving promising results in the game's initial scenarios.",
         "link": "https://github.com/JoseZancanaro/Neurovisual-controller-celeste",
         "tags": ["Python", "Digital Image Processing", "OpenCV", "Digital Games"]
       },
@@ -81,7 +81,7 @@
         "year": 2022,
         "date": "December 2022",
         "title": "Software Developer — DATYS / Lean Sales",
-        "description": "Conclusion of work as Software Developer at DATYS. During this period, I participated in the complete development of the events module (RSVP) for the Sphere system, collaborating with the team to transform event management through dynamic and intuitive web pages that covered the entire flow: from the initial Invitation, through Confirmation and Post-event follow-up, to centralized Management and Quality Control. The solution made the environment more interactive and responsive, using modern technologies such as TypeScript, React.js, Tailwind CSS, and Firebase to ensure a smooth and efficient experience."
+        "description": "Conclusion of work as Software Developer at DATYS. During this period, I participated in the complete development of the events module (RSVP) for the Sphere system, collaborating with the team to transform event management through dynamic and intuitive web pages that covered the entire flow: from the initial Invitation, through Confirmation and Post-event follow-up, to centralized Management and Quality Control. The solution made the environment more interactive and responsive, using modern technologies such as JavaScript/TypeScript, React.js, Tailwind CSS, and Firebase to ensure a smooth and efficient experience."
       },
       {
         "year": 2022,
